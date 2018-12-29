@@ -1,0 +1,270 @@
+/*.section {
+    /*text-align:center;*/
+/*font-size: 2.5vw;
+} */
+
+
+
+
+body {
+    font-size: 2.4vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', sans-serif;
+    color: white;
+
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+.all {
+    width: 100wv;
+    height: 88vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', sans-serif;
+    color: white;
+    background-color: #61425A;
+    text-shadow: #474747 3px 5px 2px;
+}
+
+.left {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 1vh;
+}
+
+.right {
+    width: 50vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #96CDEC;
+}
+
+.right p {}
+
+.left div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24vh;
+    height: 24vh;
+    filter: drop-shadow(10px 10px 3px #222);
+    border-radius: 50%;
+    font-weight: bold;
+    background-size: 150%;
+
+}
+
+.left div p {
+    background-color: rgba(0, 0, 0, 0.78);
+    border-radius: 10%;
+    text-shadow: #474747 3px 5px 2px;
+
+}
+
+/*Section2*/
+.link {
+    color: #82ADDF;
+    font-weight: 700;
+}
+
+.link:after {
+    /* font-family: "Font Awesome 5 Free";
+    content: "\f25a"; */
+    display: inline-flex;
+    content: ' ';
+    background-image: url('../img/iconWWW.svg');
+    background-size: 2vw 2vw;
+    height: 2vw;
+    width: 2vw;
+}
+
+.question {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.question:before {
+    display: inline-flex;
+    content: ' ';
+    background-image: url('../img/iconQuestion.svg');
+    background-size: 2vw 2vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2vw;
+    width: 2vw;
+    padding: 0.5vh;
+}
+
+body {
+    font-size: 2.5vw;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', sans-serif;
+    color: white;
+    background-color: #61425A;
+}
+
+h1 {
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+}
+
+.all2 {
+    width: 100wv;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left2 {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    align-items: center;
+    background-color: #61425A;
+}
+
+.left2Img {
+    width: 80vw;
+}
+
+.right2 {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B5AC87;
+    /*perspective: 1500px;*/
+}
+
+.vitrina {
+    /*transform: rotateY(-5deg); */
+    width: 40vw;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-image: url(../img/woodPattern.jpg) 30 repeat;
+    border-width: 0.7vw;
+    border-style: solid;
+    background-image: radial-gradient(circle, #222222, #1c1c1c, black);
+
+}
+
+.vitrina div div div {
+    text-align: center;
+    height: 2.2vw;
+    width: 10vw;
+    font-size: 2vw;
+    background-image: url(../img/rockTableBG.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    margin-top: -0.1vw;
+
+}
+
+.polka {
+    display: flex;
+    height: 13vw;
+    width: 40vw;
+    background-image: linear-gradient(rgba(28, 28, 28, 0.1), rgba(0, 0, 0, 0.83), rgba(28, 28, 28, 0.1));
+    justify-content: space-around;
+    align-items: flex-end;
+    border-image: url(../img/woodPattern.jpg) 30 repeat;
+    border-bottom-width: 1vw;
+    border-bottom-style: solid;
+
+}
+
+.item {
+    width: 10vw;
+    height: 11vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.5vw;
+    color: black;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.6110819327731092) 15%, rgba(0, 0, 0, 0) 50%);
+    margin-bottom: -0.7vw;
+
+}
+
+.item img {
+    max-height: 8vw;
+    max-width: 100%;
+    filter: drop-shadow(10px 10px 3px #222);
+    object-fit: contain;
+
+
+}
+
+.item img:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    z-index: 2;
+    filter: drop-shadow(10px 20px 3px rgba(0, 0, 0, 0.67));
+}
+
+.emptyPolka {
+    width: 40vw;
+    height: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: -1.5vw;
+
+
+}
+
+.emptyPolka div:hover {
+    animation-name: swing;
+    animation-duration: 1s;
+    z-index: 2;
+}
+
+.emptyPolka div {
+    width: 13vw;
+    height: 90%;
+    color: black;
+    text-align: center;
+    font-size: 2.5vw;
+    background-image: url(../img/signBG.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn {
+    padding: 0.2vw;
+    font-size: 2vw;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #af724c;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Amatic SC', sans-serif;
+    margin-bottom: 0.5vw;
+}

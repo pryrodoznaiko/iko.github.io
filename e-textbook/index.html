@@ -1,15 +1,134 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error</title>
+    <title>main</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+
+        body {
+            margin: 0;
+            font-family: 'Amatic SC', sans-serif;
+        }
+
+        .menu {
+            opacity: 0.85;
+            display: flex;
+            width: 35vw;
+            height: 35vw;
+            font-size: 25vh;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 25px;
+            text-shadow: 0.25vh 0.25vh #020000;
+            background-repeat: no-repeat; 
+            background-size: 100% 100%;
+            /*background-blend-mode: luminosity;*/
+        }
+
+        .menu:hover {
+            filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+            opacity: 1;
+            width: 40vw;
+            height: 40vw;
+            font-size: 37vh;
+            text-shadow: 0.75vh 0.75vh #020000;
+            /*background-blend-mode: soft-light;*/
+            cursor: pointer;
+        }
+        
+        .menu:active {
+            transform: translateY(20px) translateX(20px);
+            cursor: pointer;
+        } 
+        
+        a {
+            color:white;
+            text-decoration-line: none;
+        }
+
+                
+.topnav {
+overflow: hidden;
+background-color: #333040;
+display: flex;
+justify-content:space-around;
+align-items: center;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+    }
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: 'Amatic SC', sans-serif; 
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10px;
+}
+input[type=text] {
+    width: 150px;    
+    font-size: 50px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-radius: 10px;
+    font-family: 'Amatic SC', sans-serif;
+    height: 50px;
+    align-self:center;
+}
+input[type=text]:focus {
+    width: 450px;
+}        
+        
+    </style>
 </head>
 
 <body>
-    <h1> Access Denied! </h1>
-    You don't have permission to access on this server. <br>
-    Reference #178w376234786.3w4345456.12323556867845
-    
+
+    <div style="display: flex; justify-content: center;background-color:#333040; border-top-right-radius: 10px;
+            border-top-left-radius: 10px;">
+        <img style="height: 10vh;" src="logo.svg">
+    </div>
+
+    <div class="topnav">
+        <a class="active" href="main.html">ГОЛОВНА</a>
+        <a href="#">ПРО САЙТ</a>
+        <a href="#">ЗМІСТ</a>
+        <a href="#">УМОВНІ ПОЗНАЧЕННЯ</a>
+        <a href="#">ТЕСТИ</a>
+        <a href="#">ВЕРСІЯ ДЛЯ СКАЧУВАННЯ</a>
+        <a href="#">КОРИСНЕ</a>
+        <input type="text" name="search" placeholder=" ПОШУК...">
+    </div>
+    <div style="align-self: center; display:flex; justify-content:space-around; width: 95vw; margin-top: 5vh;">
+
+        <div class="menu" style="background-color:rgb(210, 105, 30);  background-image: url(BG1.PNG);">
+            <a href="lessons.html">УРОКИ</a>
+        </div>
+
+        <div class="menu" style="background-color: rgb(105, 210, 30); background-image: url(BG2.PNG);">
+            <a href="1.html">ПРОЕКТИ</a>
+        </div>
+
+    </div>
+
+
+
+
+
+
 </body>
+
 </html>
