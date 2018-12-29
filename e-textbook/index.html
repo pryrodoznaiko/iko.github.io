@@ -1,109 +1,478 @@
 <!DOCTYPE html>
-<html lang="">
- 
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
-
+    <meta charset="UTF-8">
+    <title>Гірські породи</title>
+    <link rel='stylesheet' href='https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' id='fontawesome-css' href='https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1' type='text/css' media='all' />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
     <style>
-        @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+        .topnav {
+            overflow: hidden;
+            background-color: #333040;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
 
-        body {
-            margin: 0;
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 50px;
             font-family: 'Amatic SC', sans-serif;
         }
 
-        .menu {
-            opacity: 0.85;
-            display: flex;
-            width: 35vw;
-            height: 35vw;
-            font-size: 25vh;
-            justify-content: center;
-            align-items: center;
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
             color: white;
-            border-radius: 25px;
-            text-shadow: 0.25vh 0.25vh #020000;
-            background-repeat: no-repeat; 
-            background-size: 100% 100%;
-            /*background-blend-mode: luminosity;*/
+            border-radius: 10px;
         }
 
-        .menu:hover {
-            filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-            opacity: 1;
-            width: 40vw;
-            height: 40vw;
-            font-size: 37vh;
-            text-shadow: 0.75vh 0.75vh #020000;
-            /*background-blend-mode: soft-light;*/
-            cursor: pointer;
-        }
-        
-        .menu:active {
-            transform: translateY(20px) translateX(20px);
-            cursor: pointer;
-        } 
-        
-        a {
-            color:white;
-            text-decoration-line: none;
+        input[type=text] {
+            width: 150px;
+            font-size: 50px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            border-radius: 10px;
+            font-family: 'Amatic SC', sans-serif;
+            height: 50px;
+            align-self: center;
         }
 
-                
-.topnav {
-overflow: hidden;
-background-color: #333040;
-display: flex;
-justify-content:space-around;
-align-items: center;
-border-bottom-right-radius: 10px;
-border-bottom-left-radius: 10px;
-    }
-.topnav a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 50px;
-  font-family: 'Amatic SC', sans-serif; 
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 10px;
-}
-input[type=text] {
-    width: 150px;    
-    font-size: 50px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    border-radius: 10px;
-    font-family: 'Amatic SC', sans-serif;
-    height: 50px;
-    align-self:center;
-}
-input[type=text]:focus {
-    width: 450px;
-}        
-        
+        input[type=text]:focus {
+            width: 450px;
+        }
+
     </style>
+
 </head>
 
 <body>
 
- <h1> access denied </h1>
+    <div id="fullpage">
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <!-- -->
+
+        <!-- перша секція -->
+        <div class="section">
+            <div style="width:100vw;height:100vh;diplay:flex;flex-direction: column;">
+
+                <div style="display: flex; justify-content: center;background-color:#333040; border-top-right-radius: 10px;
+            border-top-left-radius: 10px;">
+                    <img style="height: 6vh;" src="logo.svg">
+                </div>
+
+                <div class="topnav">
+                    <a class="active" href="main.html">ГОЛОВНА</a>
+                    <a href="#">ПРО САЙТ</a>
+                    <a href="#">ЗМІСТ</a>
+                    <a href="#">УМОВНІ ПОЗНАЧЕННЯ</a>
+                    <a href="#">ТЕСТИ</a>
+                    <a href="#">ВЕРСІЯ ДЛЯ СКАЧУВАННЯ</a>
+                    <a href="#">КОРИСНЕ</a>
+                    <input type="text" name="search" placeholder=" ПОШУК...">
+                </div>
+
+                <div class="all">
+
+                    <div class="left">
+
+                        <div style="background-image: url(pesok.jpg)">
+                            <p>пісок</p>
+                        </div>
+                        <div style="background-image: url(gravij.jpg)">
+                            <p>гравій</p>
+                        </div>
+
+                        <div style="background-image: url(Natural%20Salt%20Deposits-%20Rock%20salt%20and%20Crystal%20salt.jpg)">
+                            <p>кам'яна сіль</p>
+                        </div>
+
+                    </div>
+
+                    <div style="width: 35vw; height: 80vh; display: flex; flex-direction: column; justify-content: space-around;">
+                        <h1 style="text-align: left; margin-top: 0; ">Що таке гірські породи?</h1>
+                        <p style="max-width: 40vw; text-align: right;padding-right: 1vw; margin: 0;">Хоча їх називають "гірські", <br>
+                            розташовані
+                            вони скрізь. </p>
+                        <p style="max-width: 35vw; text-align: right;padding-right: 1vw; margin: 0;"> У земній корі їх налічується понад 1500. </p>
+                        <p style="max-width: 35vw; text-align: right;padding-right: 1vw; margin: 0;">
+                            Це і величезні камені, що утворюють гори, а також пісок біля річки,
+                        </p>
+                        <p style="max-width: 35vw; text-align: right;padding-right: 1vw; margin: 0;"> дрібні камінці гравію, які лежать під ногами. </p>
+
+                        <p style="max-width: 35vw; text-align: right;padding-right: 1vw; margin: 0;">
+                            Це кам'яна сіль, крейда і багато інших.
+                        </p>
+
+                        <p style="max-width: 35vw; text-align: right;padding-right: 1vw; margin: 0;">
+                            Отже, <b>гірські породи</b> - це природні тіла, які знаходяться в Землі або на її поверхні.
+
+                        </p>
+                    </div>
+
+                    <div class="right" style="background-image: url(Vinicunca.png); background-repeat: no-repeat; background-position: center; background-size: 120%; ">
+
+                        <p style="margin-bottom: -2vh;width:10vw;background-color: rgba(0, 0, 0, 0.78);
+          border-radius: 1vw;text-align: center;"><b>Вінікунка</b></p>
+                        <p style="width:35vw; background-color: rgba(0, 0, 0, 0.78);
+            border-radius: 1vw;text-align: right;"> Кольорові гори в Перу, назва яких перекдається з індіанського як «Гори кольорів веселки»</p>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- друга секція -->
+        <div class="section">
+
+            <div class="all2">
+
+                <div class="left2">
+
+                    <img class="left2Img" src="miningUndergroundTop.svg">
+
+                    <!-- <img style="margin-top: -30vh; filter: drop-shadow(0.5vh 0.5vh black);" class="leftImg" src="../miningUndergroundTopTop.svg"> -->
+
+                    <div style="margin-top: -5vw; width: 45vw;  display: flex; flex-direction: column; ">
+                        <div style="text-align: center; text-shadow: 0.5vh 0.5vh black;"><b>Які бувають види гірських порід?</b> <br> </div>
+                        <div style="font-size: 2vw; display: flex; flex-direction: column; height: 80vh; justify-content: space-between"> Гірські породи утворюються в різних умовах. Між собою вони відрізняються кольором, твердістю, запахом, будовою та властивостями. У природі зустрічаються тверді гірські породи - мармур, крейда, кам’яне вугілля. <br>
+                            <div style="
+                     border-radius: 2vw;
+                      display: flex; justify-content: center; flex-direction: row; background-color: #DFBA5B; align-items: center; color:black;">
+                                <!--
+                                <img style="width: 2.5vw; height: 2.5vw; padding: 0.25vw;" src="iconTask.svg"> -->
+                                <div class="question">Які ще бувають тверді гірські породи? Знайди їх назви <a href="#" class="link"> ТУТ</a>
+                                </div>
+                            </div>
+
+                            Існують рідкі гірські породи - нафта, вода (так-так, це також гірська порода). <br>
+
+                            <div style="border-radius: 2vw;display: flex; justify-content: center; flex-direction: row; width: 45vw; background-color: #DFBA5B; align-items: center;color:black;">
+
+                                <div style="text-align: center" class="question">З'ясуй, чому вода - гірська порода. Підготуйся розповісти про це в класі. Необхідну інформацію ти знайдеш <a href="#" class="link"> ТУТ</a>
+                                </div>
+                            </div>
+
+                            <div style="border-radius: 2vw;display: flex; justify-content: flex-start; flex-direction: row; width: 45vw; background-color: #DFBA5B; align-items: center; color:black;">
+
+                                <div style="display: flex; flex-direction: column">
+                                    <div class="question">Здогадайся, в якому стані природний газ залягає в глибинах Землі. </div>
+                                    <div style="display: flex; justify-content: space-around;">
+
+                                        <button class="btn" onclick="myFunction()">
+                                            твердому
+                                        </button>
+                                        <button class="btn" onclick="myFunction()">
+                                            рідкому
+                                        </button>
+                                        <button class="btn" onclick="myFunction2()">
+                                            газоподібному
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <img class="left2Img" src="miningUndergroundBottom.svg">
+
+
+                </div>
+
+                <div class="right2">
+                    <h1>Наша колекція гірських порід</h1>
+                    <div class="vitrina">
+
+                        <div class="emptyPolka">
+                            <div class="vit_tab"> ТВЕРДІ </div>
+                        </div>
+
+                        <div class="polka">
+
+                            <div class="item">
+                                <img src="Marble.png">
+                                <div>МАРМУР</div>
+                            </div>
+                            <div class="item">
+                                <img src="Chalk.png">
+                                <div>КРЕЙДА</div>
+                            </div>
+                            <div class="item">
+                                <img src="coal.png">
+                                <div>ВУГІЛЛЯ</div>
+                            </div>
+                        </div>
+
+                        <div class="emptyPolka">
+                            <div class="vit_tab"> РІДКІ </div>
+                        </div>
+
+                        <div class="polka">
+
+                            <div class="item">
+                                <img src="Petroleum.png">
+                                <div>НАФТА</div>
+                            </div>
+                            <div class="item">
+                                <img src="waterBottle.png">
+                                <div>ВОДА</div>
+                            </div>
+
+                        </div>
+
+                        <div class="emptyPolka">
+                            <div class="vit_tab"> ГАЗОПОДІБНІ </div>
+                        </div>
+
+                        <div class="polka">
+
+                            <div class="item">
+                                <img src="gas.png">
+                                <div>ПРИРОДНИЙ ГАЗ</div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
 
 
 
 
 
 
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <!-- третя секція -->
+        <div class="section">
+            <div style="width: 100wv;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            font-size: 2vw;
+            margin: 0;
+            padding: 0;
+            font-family: 'Amatic SC', sans-serif;
+            color: white;">
+
+                <div style="width: 55vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color: #8B4840;">
+                    <div style="width:55vw; min-height: 15vh;">
+                        <img style="min-width:100%" src="miningbgFull.svg">
+                    </div>
+
+                    <div style="display: flex; flex-direction: row;
+                background-color: #8B4840; ">
+                        <div style="display: flex; justify-content: center; width:20vw; background-image: url(layers.svg); background-repeat: no-repeat;background-position: center;">
+
+                        </div>
+
+                        <div style="font-size: 2vw; width: 35vw;">
+                            <p>
+                                Одні гірські породи знаходяться близько біля поверхні, інші – на великих глибинах.</p>
+
+                            <p>
+                                Наприклад, торф видобувають з поверхні землі.
+                                Він утворюється у місцях заростання водойм або внаслідок заболочування території.
+                            </p>
+                            <p>
+                                Близько до поверхні Землі розміщується пісок і глина.
+                                <p>
+                                    Нафта утворюється на глибині 2–3 км, переважно на дні морів. Тому її шукають там, де колись були моря.
+                                </p>
+                                <p>
+                                    Є гірські породи, які залягають на глибині 10–15 км.
+                                </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div style=" width: 45vw;
+            height: 100vh;   display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #8B4840;">
+
+                    <div style="background-color: #52B092;  width: 42vw;
+            height: 32vh;      display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: inset 0 0 0 0.5vh #CF695A;
+            border-radius: 0.25vw;
+               
+               
+               ">
+                        <img style=" height: 25vh;
+            max-width: 20vw;
+            max-height: 110%;
+            filter: drop-shadow(0.5vh 0.5vh 0 #000000);" src="rodovische.svg">
+                        <p style="            font-size: 1.7vw;
+            max-width: 40vw;
+            padding: 1vw;"> <b>РОДОВИЩЕ</b> <br>
+                            Місце, де породи залягають у великій кількості, називають родовищем.<br>
+                            🡔 Натисни на картинку, щоб дізнатися більше</p>
+                    </div>
+
+                    <div style="background-color: #2EC5B6;  width: 42vw;
+            height: 32vh; 
+                    display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: inset 0 0 0 0.5vh #CF695A;
+            border-radius: 0.25vw;">
+                        <img style=" height: 25vh;
+            max-width: 20vw;
+            max-height: 110%;
+            filter: drop-shadow(0.5vh 0.5vh 0 #000000);" src="geologist2.svg">
+                        <p style="            font-size: 1.7vw;
+            max-width: 40vw;
+            padding: 1vw;"> <b>ГЕОЛОГ</b> <br>
+                            Геолог – це людина, яка вивчає і шукає гірські породи.<br>
+                            🡔 Натисни на картинку, щоб дізнатися більше</p>
+                    </div>
+
+                    <div style="background-color: #509398;  width: 42vw;
+            height: 32vh; 
+                    display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: inset 0 0 0 0.5vh #CF695A;
+            border-radius: 0.25vw;">
+                        <img style=" height: 25vh;
+            max-width: 20vw;
+            max-height: 110%;
+            filter: drop-shadow(0.5vh 0.5vh 0 #000000);" src="iskop.svg">
+                        <p style="            font-size: 1.7vw;
+            max-width: 40vw;
+            padding: 1vw;"><b>КОРИСНІ КОПАЛИНИ</b> <br>
+                            Гірські породи, які люди видобувають із глибин
+                            землі і використовують для своїх потреб, називають
+                            корисними копалинами. <br>
+                            🡔 Натисни на картинку, щоб дізнатися більше</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- четверта секція -->
+        <div class="section">
+            <div style="width:100vw;height:100vh;display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #D55D48">
+                <h1>Завантаж, роздрукуй та вклей у зошит</h1>
+
+                <div style="width:40vw; display: flex; justify-content: space-around; align-items: center; ">
+                    <img style="height: 70vh;
+            border-radius: 1vw;
+            border-width: thick;
+            border-style: double;
+            border-color: white;            
+            " src="info.png">
+
+
+
+
+                    <img style="background-color: white;height: 20vh;   border-width: thick;
+            border-style: double;
+            border-color: white; border-radius: 50%;    " src="iconDownload.svg">
+
+                </div>
+            </div>
+        </div>
+        <!-- -->
+    </div>
+
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <script>
+        function myFunction() {
+            swal({
+                title: "<h1>невірно</h1>",
+                imageUrl: "https://bumper-stickers.ru/30160-thickbox_default/grustnyy-smaylik.jpg",
+                imageWidth: 225,
+                imageHeight: 225,
+                showCloseButton: true,
+                showConfirmButton: false,
+
+
+            });
+        }
+
+    </script>
+
+    <script>
+        function myFunction2() {
+            swal({
+                title: "<h1>вірно!</h1>",
+                imageUrl: "http://s1.iconbird.com/ico/2013/8/429/w512h5121377939807185085happysmileystreamline.png",
+                imageWidth: 225,
+                imageHeight: 225,
+                showCloseButton: true,
+                showConfirmButton: false,
+                // timer: 1000
+
+            });
+        }
+
+    </script>
+
+
+
+
+    <script src='js/jquery.min.js'></script>
+    <script src='js/fullpage.js'></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
